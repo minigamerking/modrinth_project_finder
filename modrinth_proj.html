@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="proj_css.css">
+    </head>
+    <body>
+        <div class="mainContainer">
+            <button class="toggle-btn-rqst" id="getRequestBtn">GET Project</button>
+            <br>
+            <p id="note">Note: It may take time to find a project</p>
+            <br>
+            <div id="inputElements">
+                <div class="inputs" id="projectTypes">
+                    <h4 class="categoryHeaders" id="typeHeader">Project Type(s)</h4>
+                    <button class="toggle-btn" id="modCheck" data-selected="false">Mods</button>
+                    <button class="toggle-btn" id="modpackCheck" data-selected="false">Modpacks</button>
+                    <button class="toggle-btn" id="resourcepackCheck" data-selected="false">Resource Packs</button>
+                </div>
+                <div class="inputs" id="modLoaders">
+                    <h4 class="categoryHeaders" id="loaderHeader">Mod Loader(s)</h4>
+                    <button class="toggle-btn" id="forgeCheck" data-selected="false">Forge</button>
+                    <button class="toggle-btn" id="fabricCheck" data-selected="false">Fabric</button>
+                </div>
+                <div class="inputs" id="environments">
+                    <h4 class="categoryHeaders" id="envHeader">Mod Environment(s)</h4>
+                    <button class="toggle-btn" id="clientCheck" data-selected="false">Clientside</button>
+                    <button class="toggle-btn" id="serverCheck" data-selected="false">Serverside</button>
+                </div>
+                <div class="inputs" id="minecraftVersions">
+                    <h4 class="categoryHeaders" id="versionHeader">Minecraft Version(s)</h4>
+                    <button class="dropdown-btn" id="versionDropdownBtn">Select Minecraft Versions</button>
+                    <div class="dropdown-content" id="versionDropdownContent">
+                        <button class="version-btn" data-version="1.21">1.21</button>
+                        <button class="version-btn" data-version="1.20.4">1.20.4</button>
+                        <button class="version-btn" data-version="1.20.1">1.20.1</button>
+                        <button class="version-btn" data-version="1.19.2">1.19.2</button>
+                        <button class="version-btn" data-version="1.18.2">1.18.2</button>
+                        <button class="version-btn" data-version="1.17.1">1.17.1</button>
+                        <button class="version-btn" data-version="1.16.5">1.16.5</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modDetails" class="mod-info">
+                <!-- Mod details will be displayed here -->
+            </div>
+            <br>
+            <iframe id="modIFrame" src="" width="75%" height="75%"></iframe>
+        </div>
+        <script src="proj_js.js"></script>
+    </body>
+</html>

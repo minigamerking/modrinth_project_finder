@@ -1,0 +1,156 @@
+html {
+    background-color: #121212;
+}
+@font-face {
+    font-family: LexendMedium;
+    src: url('lexend-medium.ttf');
+}
+.inputs {
+    text-align: center;
+    color: #d4d4d4;
+    font-family: LexendMedium;
+}
+label {
+    font-size: 14px;
+}
+.mod-info {
+    text-align: center;
+    margin-top: 20px;
+    font-family: LexendMedium;
+    color: #d4d4d4;
+}
+#note {
+    text-align: center;
+    color: #d4d4d4;
+    font-family: LexendMedium;
+}
+#modIFrame {
+    display: none;
+    margin: 0 auto;
+}
+#getRequestBtn {
+    display: block;
+    margin: 0 auto;
+}
+#modDetails {
+    margin-top: 20px;
+    text-align: center;
+}
+#minecraftVersionSelect {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.toggle-btn-rqst {
+    padding: 10px 20px;
+    background-color: #444;
+    border: none;
+    color: #d4d4d4;
+    font-family: LexendMedium;
+    font-size: 14px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    position: relative;
+}
+/* Hover effect */
+.toggle-btn-rqst:hover {
+    background-color: #666;
+}
+
+/* Button toggle styles with sliding effect */
+.toggle-btn {
+    padding: 10px 20px;
+    background-color: #444;
+    border: none;
+    color: #d4d4d4;
+    font-family: LexendMedium;
+    font-size: 14px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    position: relative;
+}
+
+/* Hover effect */
+.toggle-btn:hover {
+    background-color: #666;
+}
+
+/* Selected state (green background) */
+.toggle-btn[data-selected="true"] {
+    background-color: #4caf50;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Sliding effect */
+.toggle-btn[data-selected="false"] {
+    transform: scale(0.95);
+}
+/* Dropdown button */
+.dropdown-btn {
+    background-color: #444;
+    color: #d4d4d4;
+    padding: 10px 20px;
+    font-family: LexendMedium;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 25px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-btn:hover {
+    background-color: #666;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    background-color: #121212;
+    width: 5%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    padding: 10px;
+}
+
+/* Show the dropdown when the button is clicked */
+.dropdown-content.show {
+    display: block;
+}
+
+/* Styling for version buttons inside the dropdown */
+.version-btn {
+    display: block;
+    background-color: #444;
+    color: #d4d4d4;
+    padding: 10px;
+    margin-top: 5%;
+    margin: auto;
+    font-family: LexendMedium;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.version-btn:hover {
+    background-color: #666;
+}
+
+.version-btn.active {
+    background-color: #4caf50; /* Green when selected */
+    color: white;
+}
