@@ -24,6 +24,10 @@ label {
     color: #d4d4d4;
     font-family: LexendMedium;
 }
+#repoLink {
+    color: #d4d4d4;
+    font-family: LexendMedium;
+}
 #modIFrame {
     display: none;
     margin: 0 auto;
